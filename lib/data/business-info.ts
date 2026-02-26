@@ -6,30 +6,30 @@
  */
 export const businessInfo = {
   // Core Business Details
-  name: "Your Business Name",
-  tagline: "Your compelling tagline goes here",
+  name: "Summit Cycle Co.",
+  tagline: "Expert Bicycle Repair & Service",
   description:
-    "A brief description of what your business does and who you serve. This appears in the footer and meta descriptions.",
+    "Summit Cycle Co. is your local bicycle repair specialist in Boulder. We service mountain bikes, road bikes, and everything in between with expert care and precision.",
 
   // Contact Information
-  phone: "(555) 000-0000",
+  phone: "(720) 842-7623",
   phoneSecondary: "", // Optional secondary phone number
-  email: "hello@example.com",
+  email: "hello@summitcycleco.com",
 
   // Physical Location
   address: {
-    street: "123 Main Street",
+    street: "456 Trailhead Ave",
     area: "", // Optional: neighborhood, suite, or building name
-    city: "Your City",
-    state: "ST",
-    zip: "00000",
+    city: "Boulder",
+    state: "CO",
+    zip: "80302",
     country: "US",
   },
 
   // Coordinates for maps (optional - set to 0 if unknown)
   geo: {
-    latitude: 0,
-    longitude: 0,
+    latitude: 40.015,
+    longitude: -105.2705,
   },
 
   // Google Maps configuration
@@ -37,40 +37,40 @@ export const businessInfo = {
     /** Google Maps Place ID (find at: https://developers.google.com/maps/documentation/places/web-service/place-id) */
     placeId: "",
     /** Display name for the location on maps */
-    locationName: "Your Business Name",
+    locationName: "Summit Cycle Co.",
     /** Google Maps API key (optional, for embed without place ID) */
     apiKey: "",
   },
 
   // Business Hours
   hours: {
-    monday: "9:00 AM - 5:00 PM",
-    tuesday: "9:00 AM - 5:00 PM",
-    wednesday: "9:00 AM - 5:00 PM",
-    thursday: "9:00 AM - 5:00 PM",
-    friday: "9:00 AM - 5:00 PM",
-    saturday: "Closed",
+    monday: "9:00 AM - 6:00 PM",
+    tuesday: "9:00 AM - 6:00 PM",
+    wednesday: "9:00 AM - 6:00 PM",
+    thursday: "9:00 AM - 6:00 PM",
+    friday: "9:00 AM - 6:00 PM",
+    saturday: "9:00 AM - 5:00 PM",
     sunday: "Closed",
   } as Record<string, string>,
 
   // Timezone for open/closed status calculation
-  timezone: "America/New_York",
+  timezone: "America/Denver",
 
   // Social Media (leave empty string if not used)
   social: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://facebook.com/summitcycleco",
+    instagram: "https://instagram.com/summitcycleco",
     twitter: "",
     linkedin: "",
     youtube: "",
   },
 
   // Website
-  url: "https://example.com",
+  url: "https://summitcycleco.com",
   logo: "/logo.png",
 
   // Booking (leave empty string if no booking system)
-  bookingUrl: "https://example.com/book",
+  bookingUrl: "/contact",
   showBookingButton: true, // Set to false to hide booking buttons in navbar/footer
 
   // Optional: Price range for schema.org ($, $$, $$$, $$$$)

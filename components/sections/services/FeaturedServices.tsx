@@ -88,8 +88,8 @@ function ServiceCarouselCard({ service }: { service: Service }) {
  * Displays services marked as `featured: true` in services data.
  */
 export function FeaturedServices({
-  title = "Most Popular Services",
-  subtitle = "Discover the treatments our patients love most.",
+  title = "Our Most Popular Services",
+  subtitle = "From quick tune-ups to full overhauls — we handle it all.",
   ctaText = "View All Services",
   ctaUrl = "/services",
   className,

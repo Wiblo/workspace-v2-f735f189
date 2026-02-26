@@ -24,29 +24,29 @@ export function FeaturesSection({ className }: FeaturesSectionProps) {
   const blocks: FeatureBlock[] = [
     {
       id: "feature-1",
-      title: "Why Choose Us",
+      title: "Certified Mechanics Who Ride",
       description:
-        "We bring years of experience and dedication to every project. Our team is committed to delivering exceptional results that exceed your expectations. We take the time to understand your unique needs and tailor our approach accordingly.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop",
-      imageAlt: "Team collaboration",
+        "Every mechanic on our team is a passionate cyclist first. We ride the same trails and roads you do, so we understand what your bike needs to perform at its best. Our certifications include Barnett's Bicycle Institute training and manufacturer-specific programs from Trek, Specialized, and Shimano.",
+      image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&h=800&fit=crop",
+      imageAlt: "Cyclist riding a mountain bike on a trail",
       imagePosition: "right",
     },
     {
       id: "feature-2",
-      title: "Our Approach",
+      title: "Fast Turnaround, Honest Pricing",
       description:
-        "We believe in a personalized approach that puts you first. From your initial consultation to the final result, we ensure clear communication and transparency at every step. Your satisfaction is our top priority.",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop",
-      imageAlt: "Professional consultation",
+        "We know your bike is your escape. That's why we offer same-day service for most tune-ups and repairs, with no surprise charges. We'll diagnose your bike for free and give you a clear quote before any work begins. No upsells, no runaround — just straightforward service.",
+      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=800&fit=crop",
+      imageAlt: "Bicycle mechanic at a workshop bench with tools",
       imagePosition: "left",
     },
     {
       id: "feature-3",
-      title: "Results You Can Trust",
+      title: "All Brands, All Bikes",
       description:
-        "Our track record speaks for itself. We have helped countless clients achieve their goals and we are ready to help you too. Experience the difference that expertise and genuine care can make.",
-      image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&h=800&fit=crop",
-      imageAlt: "Successful results",
+        "From entry-level commuters to high-end race machines, we service every type of bicycle. We stock parts from all major brands and have experience with Shimano, SRAM, Campagnolo, Fox, RockShox, and more. If we don't have a part in stock, we'll get it fast.",
+      image: "https://images.unsplash.com/photo-1526659666037-6c99e3f9dbe0?w=800&h=800&fit=crop",
+      imageAlt: "Row of different bicycles in a bike shop",
       imagePosition: "right",
     },
   ]

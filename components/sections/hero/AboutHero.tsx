@@ -1,27 +1,24 @@
 import Image from "next/image"
-import Link from "next/link"
-import { ChevronRight, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 // =============================================================================
-// CONFIGURATION - Edit these variables to customize the services hero
+// CONFIGURATION - Edit these variables to customize the about hero
 // =============================================================================
 
 /** Hero height: "large" | "medium" | "small" */
 const size: "large" | "medium" | "small" = "small"
 
 /** Overlay opacity: 0-100 (percentage) */
-const overlayOpacity = 20
+const overlayOpacity = 45
 
 /** Hero content - edit these values directly */
 const heroContent = {
-  subtitle: "What We Offer",
-  title: "Our Services",
-  description: "From quick flat fixes to full custom builds — we've got you covered.",
-  backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop",
-  backgroundImageAlt: "Mountain biker on a trail in Boulder Colorado",
-  ctaText: "Get a Free Estimate",
-  ctaUrl: "/contact",
+  subtitle: "Our Story",
+  title: "About Summit Cycle Co.",
+  description: "Boulder's most trusted bicycle repair shop since 2012",
+  backgroundImage:
+    "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1600&h=600&fit=crop",
+  backgroundImageAlt: "Cyclists riding on a trail",
 }
 
 // =============================================================================
@@ -41,15 +38,15 @@ const sizeClasses = {
 // COMPONENT
 // =============================================================================
 
-export interface ServicesHeroProps {
+export interface AboutHeroProps {
   className?: string
 }
 
 /**
- * Services page hero section.
+ * About page hero section with full-width background image.
  * Configuration is done via variables at the top of this file.
  */
-export function ServicesHero({ className }: ServicesHeroProps) {
+export function AboutHero({ className }: AboutHeroProps) {
   return (
     <section className={cn(sizeClasses[size], className)}>
       <div className="relative flex w-full flex-1 flex-col overflow-hidden rounded-4xl bg-black">
@@ -63,7 +60,7 @@ export function ServicesHero({ className }: ServicesHeroProps) {
             priority
             sizes="100vw"
           />
-          {/* Overlay */}
+          {/* Dark overlay for text contrast */}
           <div
             className="absolute inset-0"
             style={{ backgroundColor: `rgba(0, 0, 0, ${overlayOpacity / 100})` }}
@@ -71,10 +68,10 @@ export function ServicesHero({ className }: ServicesHeroProps) {
         </div>
 
         {/* Content */}
-        <div className="relative flex h-full flex-1 flex-col justify-end gap-8 p-8 pt-52 lg:p-20 lg:pb-20">
-          <div className="max-w-200 bg-transparent">
-            <div className="flex flex-col gap-6 text-balance">
-              {/* Subtitle */}
+        <div className="relative flex h-full flex-1 flex-col justify-end gap-4 p-8 pt-52 lg:p-20 lg:pb-20">
+          <div className="max-w-2xl bg-transparent">
+            <div className="flex flex-col gap-4 text-balance">
+              {/* Subtitle / eyebrow */}
               <span className="text-white">
                 <span className="border-l-4 border-primary pl-4 text-lg font-medium md:text-xl">
                   {heroContent.subtitle}
@@ -88,38 +85,12 @@ export function ServicesHero({ className }: ServicesHeroProps) {
               >
                 {heroContent.title}
               </h1>
-            </div>
 
-            {/* Description */}
-            {"description" in heroContent && heroContent.description && (
-              <p className="text-white/90 text-lg md:text-xl max-w-lg text-pretty">
+              {/* Description */}
+              <p className="text-lg text-white/85 text-pretty md:text-xl">
                 {heroContent.description}
               </p>
-            )}
-          </div>
-
-          {/* CTA Button */}
-          <div className="flex">
-            <Link
-              href={heroContent.ctaUrl}
-              className="group relative flex min-h-12 items-center justify-center rounded-lg bg-primary px-6 py-3 font-medium text-white transition-colors ease-in-out hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            >
-              <span className="flex flex-1 items-center justify-center gap-x-2">
-                <span className="flex flex-row items-center gap-x-1">
-                  {heroContent.ctaText}
-                  <span className="relative inline-block h-4 w-4">
-                    <ChevronRight
-                      className="absolute left-0 top-0 h-4 w-4 transition-[transform,opacity] duration-200 group-hover:translate-x-1 group-hover:opacity-0"
-                      aria-hidden="true"
-                    />
-                    <ArrowRight
-                      className="absolute left-0 top-0 h-4 w-4 -translate-x-1 opacity-0 transition-[transform,opacity] duration-200 group-hover:translate-x-0 group-hover:opacity-100"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </span>
-              </span>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

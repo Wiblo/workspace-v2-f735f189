@@ -1,70 +1,77 @@
-# Brand Guide
+# Brand Guide — Summit Cycle Co.
 
 ## Overview
 
-Professional, trustworthy aesthetic for local service businesses. Blue conveys reliability and calm; warm neutrals prevent clinical coldness. Color is used sparingly - the UI is predominantly neutral with blue reserved for key actions.
+Summit Cycle Co. is a Boulder, CO bicycle repair shop specializing in mountain and road bikes. The brand is outdoorsy, rugged, and adventurous — but also precise and professional. Deep forest green grounds the identity in nature and durability; warm amber energizes and signals performance.
+
+---
 
 ## Colors
 
 ### Primary Palette
 
-| Token | Purpose | Usage |
-|-------|---------|-------|
-| **Primary** | Buttons, links, CTAs | Main brand color - use sparingly for key actions |
-| **Secondary** | Subtle backgrounds | Footer, FAQ cards, alternate sections |
-| **Accent** | Hover states | Interactive element highlights |
+| Token | Color | Purpose |
+|-------|-------|---------|
+| **Primary** | Deep Forest Green | Buttons, links, key CTAs, nav accents |
+| **Primary Foreground** | Near-white | Text on primary/green backgrounds |
+| **Accent** | Warm Amber/Orange | Hover states, highlights, badges, callouts |
+| **Accent Foreground** | Dark forest | Text on amber accent backgrounds |
 
 ### Neutral Palette
 
-| Token | Purpose |
-|-------|---------|
-| **Background** | Page background (white) |
-| **Foreground** | Body text (dark with blue undertone) |
-| **Muted** | Disabled states, quiet backgrounds |
-| **Muted Foreground** | Secondary text, captions |
-| **Border** | Dividers, input borders |
+| Token | Color | Purpose |
+|-------|-------|---------|
+| **Background** | Off-white with green tint | Page background |
+| **Foreground** | Deep charcoal-green | Body text |
+| **Secondary** | Light green-tinted gray | Card backgrounds, subtle sections |
+| **Muted** | Very light green-gray | Disabled states, quiet backgrounds |
+| **Muted Foreground** | Medium gray-green | Captions, secondary text |
+| **Border** | Soft green-gray | Dividers, input outlines |
 
 ### OKLCH Values
 
 #### Light Mode
 
 ```css
---background: oklch(0.995 0 0);
---foreground: oklch(0.15 0.01 240);
---primary: oklch(0.55 0.12 240);
---primary-foreground: oklch(0.98 0 0);
---secondary: oklch(0.82 0.03 240);
---secondary-foreground: oklch(0.2 0.02 240);
---muted: oklch(0.96 0.01 240);
---muted-foreground: oklch(0.45 0.02 240);
---accent: oklch(0.94 0.03 240);
---accent-foreground: oklch(0.2 0.02 240);
---border: oklch(0.91 0.01 240);
---ring: oklch(0.55 0.12 240);
+--background: oklch(0.98 0.005 145);
+--foreground: oklch(0.18 0.04 152);
+--primary: oklch(0.31 0.07 152);
+--primary-foreground: oklch(0.97 0.005 145);
+--secondary: oklch(0.93 0.015 145);
+--secondary-foreground: oklch(0.22 0.04 152);
+--muted: oklch(0.95 0.01 145);
+--muted-foreground: oklch(0.48 0.03 152);
+--accent: oklch(0.72 0.17 55);
+--accent-foreground: oklch(0.18 0.04 152);
+--border: oklch(0.88 0.015 145);
+--ring: oklch(0.31 0.07 152);
 ```
 
 #### Dark Mode
 
 ```css
---background: oklch(0.14 0.015 240);
---foreground: oklch(0.96 0.005 240);
---primary: oklch(0.7 0.12 240);
---primary-foreground: oklch(0.14 0.015 240);
---secondary: oklch(0.22 0.02 240);
---secondary-foreground: oklch(0.96 0.005 240);
---muted: oklch(0.22 0.02 240);
---muted-foreground: oklch(0.65 0.02 240);
---accent: oklch(0.26 0.04 240);
---accent-foreground: oklch(0.96 0.005 240);
+--background: oklch(0.16 0.03 152);
+--foreground: oklch(0.94 0.01 145);
+--primary: oklch(0.48 0.1 152);
+--primary-foreground: oklch(0.97 0.005 145);
+--secondary: oklch(0.22 0.04 152);
+--secondary-foreground: oklch(0.94 0.01 145);
+--muted: oklch(0.22 0.03 152);
+--muted-foreground: oklch(0.6 0.03 145);
+--accent: oklch(0.72 0.17 55);
+--accent-foreground: oklch(0.14 0.03 152);
 --border: oklch(1 0 0 / 10%);
---ring: oklch(0.7 0.12 240);
+--ring: oklch(0.48 0.1 152);
 ```
 
 ### Color Hue Reference
 
-- **Hue 240** = Blue (primary brand color)
-- **Chroma 0.12** = Moderate saturation (professional, not flashy)
-- **Chroma 0.01-0.03** = Very subtle tint (for neutrals)
+- **Hue 152** = Forest green (primary brand color)
+- **Hue 55** = Warm amber/orange (accent — energy, performance)
+- **Chroma 0.07** = Natural, earthy green saturation
+- **Chroma 0.17** = Vivid amber — used sparingly for impact
+
+---
 
 ## Typography
 
@@ -72,21 +79,35 @@ Professional, trustworthy aesthetic for local service businesses. Blue conveys r
 
 | Role | Font | Characteristics |
 |------|------|-----------------|
-| **Headings** | Geist Sans | Clean, modern, geometric |
-| **Body** | Geist Sans | Same family for consistency |
+| **Headings** | Barlow Condensed | Bold, sporty, strong — great for impact titles |
+| **Body** | Barlow | Clean, readable, same family — athletic and no-nonsense |
+
+Barlow is a grotesque sans-serif inspired by the visual style of California's sign painting tradition — perfect for an outdoor/performance brand. The condensed variant adds punch to headings.
 
 ### Implementation
 
-Fonts are loaded via `next/font/google` in `app/layout.tsx`:
-
 ```tsx
-import { Geist } from 'next/font/google'
+import { Barlow_Condensed, Barlow } from 'next/font/google'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
+  variable: '--font-heading',
+  weight: ['600', '700', '800'],
+})
+
+const barlow = Barlow({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['400', '500', '600'],
 })
 ```
+
+### Usage
+
+- **Headings**: `font-heading` — use weight 700-800 for hero titles, 600 for section headings
+- **Body**: `font-sans` (Barlow) — use weight 400-500 for text, 600 for labels/callouts
+
+---
 
 ## Shape & Space
 
@@ -94,52 +115,56 @@ const geistSans = Geist({
 
 | Variable | Value | Components |
 |----------|-------|------------|
-| `--radius` | `0.625rem` | Base radius |
-| `--radius-sm` | `0.375rem` | Small elements |
-| `--radius-lg` | `0.625rem` | Cards, modals |
-| `--radius-xl` | `1rem` | Large containers |
-| `--radius-4xl` | `2rem` | Hero sections, major blocks |
+| `--radius` | `0.5rem` | Base radius |
+| `--radius-sm` | `0.375rem` | Small elements (badges, tags) |
+| `--radius-md` | `0.438rem` | Inputs, small cards |
+| `--radius-lg` | `0.5rem` | Cards, modals |
+| `--radius-xl` | `0.75rem` | Large cards |
 
-**Feel**: Balanced - friendly but professional. Not too sharp, not too soft.
+**Feel**: Medium — purposefully not too soft (avoids generic/playful feel) and not too sharp (avoids harsh/corporate feel). Matches the precision + ruggedness balance of the brand.
 
 ### Spacing
 
-Use Tailwind's default spacing scale. Key patterns:
 - Section padding: `py-16 md:py-24`
 - Card padding: `p-6` or `p-8`
 - Gap between items: `gap-4` to `gap-8`
+
+---
 
 ## Visual Guidelines
 
 ### Do
 
-- Use primary color only for buttons, links, and key CTAs
-- Keep backgrounds neutral (white, light gray)
-- Add subtle blue undertones to grays for cohesion
-- Use generous whitespace
-- Maintain strong contrast for readability
+- Use primary green for buttons, nav links, and section headings
+- Reserve amber for highlights, hover states, badges, and key callouts
+- Keep backgrounds mostly neutral with a subtle green tint for cohesion
+- Use uppercase or wide-tracking (`tracking-wider`) on section labels
+- Use Barlow Condensed Bold/ExtraBold for major headlines — let it be bold
+- Keep plenty of whitespace — precision and expertise come through in restraint
 
 ### Don't
 
-- Don't use gradients (solid colors only)
-- Don't use glow effects
-- Don't overuse the primary color
-- Don't use pure black (#000) - use the foreground token
-- Don't use highly saturated colors
+- Don't use gradients — solid colors only
+- Don't use glow effects or drop shadows as primary affordances
+- Don't use pure black — use the foreground token
+- Don't overuse amber — it's an accent, not a base color
+- Don't use emojis as icons — use lucide-react
+
+---
 
 ## Component Patterns
 
 ### Buttons
 
 ```tsx
-// Primary action
-className="bg-primary text-primary-foreground hover:bg-primary/90"
+// Primary action (forest green)
+className="bg-primary text-primary-foreground hover:bg-primary/85"
 
-// Secondary action
-className="bg-secondary text-secondary-foreground hover:bg-secondary/80"
+// Accent/highlight action (amber)
+className="bg-accent text-accent-foreground hover:bg-accent/90"
 
 // Outline
-className="border border-primary text-primary hover:bg-accent"
+className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
 ```
 
 ### Cards
@@ -148,16 +173,24 @@ className="border border-primary text-primary hover:bg-accent"
 className="bg-card text-card-foreground border border-border rounded-lg"
 ```
 
-### Subtle Backgrounds
+### Section Labels (eyebrow text)
 
 ```tsx
-// For sections needing visual separation
-className="bg-secondary/10"
+className="text-accent font-semibold uppercase tracking-widest text-sm"
 ```
+
+### Subtle Section Backgrounds
+
+```tsx
+// Alternating sections
+className="bg-secondary/60"
+```
+
+---
 
 ## Accessibility
 
-- Primary on white: ~4.7:1 contrast ratio (WCAG AA)
-- Foreground on background: ~12:1 contrast ratio (WCAG AAA)
-- All interactive elements have visible focus states
+- Primary green on white: ~8:1 contrast ratio (WCAG AAA)
+- Amber accent on dark: meets 4.5:1 minimum
+- All interactive elements have visible focus states via `--ring`
 - Minimum touch target: 44x44px

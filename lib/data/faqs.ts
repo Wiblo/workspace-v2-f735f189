@@ -18,43 +18,43 @@ export interface FAQ {
 /**
  * Frequently asked questions.
  * Edit this array to add, remove, or modify FAQs.
- *
- * Tips:
- * - Keep answers concise but complete
- * - Use natural language that matches how customers ask
- * - Order by most commonly asked first
- * - Include questions that address common objections
  */
 export const faqs: FAQ[] = [
   {
     id: "faq-1",
-    question: "What is your first frequently asked question?",
+    question: "How long does a bike repair take?",
     answer:
-      "This is the answer to your first FAQ. Provide a clear, helpful response that addresses the customer's concern. Keep it concise but complete.",
+      "Turnaround time depends on the work needed and our current shop schedule. Simple repairs like flat tires or brake adjustments are often done same-day. Tune-ups typically take 1–2 days, and more involved work like suspension service or custom builds can take 1–2 weeks. We'll give you an accurate estimate when you drop off your bike.",
   },
   {
     id: "faq-2",
-    question: "What is your second frequently asked question?",
+    question: "Do I need to make an appointment?",
     answer:
-      "This is the answer to your second FAQ. You can include details about your services, policies, or anything customers commonly ask about.",
+      "Walk-ins are welcome! However, booking ahead helps us schedule your bike more efficiently and may result in faster turnaround. You can call us or stop by the shop to drop off your bike. We'll always do a quick check-in assessment before starting any work.",
   },
   {
     id: "faq-3",
-    question: "What is your third frequently asked question?",
+    question: "What types of bikes do you service?",
     answer:
-      "This is the answer to your third FAQ. Consider including information about pricing, availability, or what customers can expect.",
+      "We specialize in mountain bikes and road bikes, including hardtails, full-suspension bikes, gravel bikes, cyclocross bikes, and commuter bikes. We work on all major brands. If you're not sure whether we can work on your bike, just give us a call.",
   },
   {
     id: "faq-4",
-    question: "What is your fourth frequently asked question?",
+    question: "How much does a tune-up cost?",
     answer:
-      "This is the answer to your fourth FAQ. Address common concerns or objections that potential customers might have.",
+      "Our Basic Tune-Up starts at $65 and covers gear and brake adjustments, lubrication, and a safety inspection. Our Full Tune-Up starts at $110 and includes everything in the Basic plus drivetrain cleaning, cable replacement if needed, and wheel truing. Additional parts are priced separately. We'll always give you an estimate before starting.",
   },
   {
     id: "faq-5",
-    question: "What is your fifth frequently asked question?",
+    question: "Can you source parts, or should I bring my own?",
     answer:
-      "This is the answer to your fifth FAQ. Include any additional information that helps customers make a decision.",
+      "We keep a wide selection of common parts and consumables in stock. For specialized components or specific brands, we can order parts for you, usually within a few business days. You're also welcome to bring your own parts — we're happy to install components you've purchased elsewhere.",
+  },
+  {
+    id: "faq-6",
+    question: "Do you offer any warranty on your repairs?",
+    answer:
+      "Yes. All of our labor is backed by a 30-day workmanship warranty. If something we serviced isn't working correctly within 30 days of the repair, bring it back and we'll make it right at no charge. Parts warranties follow the manufacturer's policy.",
   },
 ]
 

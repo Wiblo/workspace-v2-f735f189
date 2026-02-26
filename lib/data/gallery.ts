@@ -26,45 +26,46 @@ export interface GalleryContent {
 /**
  * Gallery content configuration.
  * Edit this to customize the gallery section.
- *
- * Tips:
- * - Use descriptive alt text for each image
- * - Keep image sizes consistent for best grid appearance
- * - Recommended: 6 images for 3-column, 4 or 8 for 4-column layouts
  */
 export const galleryContent: GalleryContent = {
-  title: "Our Gallery",
-  subtitle: "Take a look at our space and see what we have to offer.",
+  title: "Our Work",
+  subtitle: "From trail-ready mountain bikes to precision road machines — see what we've been building and repairing.",
   items: [
     {
       id: "gallery-1",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=800&fit=crop",
-      alt: "Placeholder image 1",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop",
+      alt: "Mountain biker on a rocky trail",
+      caption: "Trail-ready and tuned",
     },
     {
       id: "gallery-2",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=800&fit=crop",
-      alt: "Placeholder image 2",
+      image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&h=800&fit=crop",
+      alt: "Road bicycle on a sunny road",
+      caption: "Road bike precision service",
     },
     {
       id: "gallery-3",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=800&fit=crop",
-      alt: "Placeholder image 3",
+      image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=800&fit=crop",
+      alt: "Bicycle workshop with components",
+      caption: "Custom build in progress",
     },
     {
       id: "gallery-4",
-      image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&h=800&fit=crop",
-      alt: "Placeholder image 4",
+      image: "https://images.unsplash.com/photo-1531591346702-a16f70e3e47a?w=800&h=800&fit=crop",
+      alt: "Mechanic working on a bicycle",
+      caption: "Expert hands, every time",
     },
     {
       id: "gallery-5",
-      image: "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=800&fit=crop",
-      alt: "Placeholder image 5",
+      image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&h=800&fit=crop",
+      alt: "Cyclist riding on mountain trail at sunset",
+      caption: "Where our work takes you",
     },
     {
       id: "gallery-6",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=800&fit=crop",
-      alt: "Placeholder image 6",
+      image: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=800&h=800&fit=crop",
+      alt: "Road cyclist on an open road",
+      caption: "Mile after smooth mile",
     },
   ],
 }

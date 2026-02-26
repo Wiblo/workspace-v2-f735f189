@@ -72,6 +72,7 @@ export default async function ServicePage({ params }: Props) {
 
   // Strip the icon field before passing to client component
   // (React components can't be serialized across server/client boundary)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { icon: _icon, ...serviceData } = service
 
   return (

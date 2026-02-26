@@ -40,55 +40,53 @@ export interface GoogleRating {
 /**
  * Customer testimonials.
  * Edit this array to add, remove, or modify testimonials.
- *
- * Tips:
- * - Use real customer feedback when possible
- * - Include specific details about their experience
- * - Vary the length of quotes for visual interest
- * - Higher ratings (4-5 stars) are more impactful
  */
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Sarah M.",
-    text: "Excellent service from start to finish. The staff was professional and friendly, and I saw real results after just a few sessions. Highly recommend to anyone looking for quality care.",
+    name: "Jake M.",
+    text: "Brought in my trail bike after a gnarly crash — the team did a full assessment, replaced the bent derailleur hanger, trued the wheels, and bled the brakes. Rides like new. Best shop in Boulder.",
     rating: 5,
+    role: "Mountain Biker",
     source: "google",
     isGoogleVerified: true,
     date: "2 weeks ago",
   },
   {
     id: "2",
-    name: "James P.",
-    text: "I've been coming here for months now and the improvement in my condition has been remarkable. The team really takes the time to understand your needs and create a personalized treatment plan.",
+    name: "Priya S.",
+    text: "I had my road bike tuned up before a big century ride and it made a noticeable difference. Shifting was crisp, brakes were perfect, and the mechanic gave me a few tips on chain maintenance. Highly recommend.",
     rating: 5,
+    role: "Road Cyclist",
     source: "google",
     isGoogleVerified: true,
     date: "1 month ago",
   },
   {
     id: "3",
-    name: "Michelle K.",
-    text: "After trying several other places, I finally found a practice that actually listens. They explained everything clearly and I felt comfortable throughout the entire process.",
+    name: "Tom W.",
+    text: "Summit Cycle Co. built my custom gravel bike from scratch. They helped me choose every component, kept me updated throughout the build, and the result is exactly what I wanted. Worth every penny.",
     rating: 5,
+    role: "Gravel Rider",
     source: "google",
     isGoogleVerified: true,
     date: "1 month ago",
   },
   {
     id: "4",
-    name: "David R.",
-    text: "Great experience overall. The facility is clean and modern, appointments run on time, and the results speak for themselves. Will definitely continue my treatment here.",
+    name: "Rachel L.",
+    text: "Quick and honest service. Dropped in with a flat and a weird clicking noise — they had it sorted within the hour and didn't try to upsell me on anything I didn't need. Will definitely be back.",
     rating: 5,
+    role: "Commuter",
     source: "google",
     isGoogleVerified: true,
     date: "2 months ago",
   },
   {
     id: "5",
-    name: "Lisa T.",
-    text: "Very impressed with the level of care and attention. They genuinely care about their patients and it shows in everything they do.",
-    rating: 4,
+    name: "Marcus D.",
+    text: "The suspension service on my full-sus was long overdue. Night and day difference — the fork feels like new and the rear shock is so much more responsive. These guys really know their stuff.",
+    rating: 5,
     source: "google",
     isGoogleVerified: true,
     date: "3 months ago",
@@ -100,9 +98,9 @@ export const testimonials: Testimonial[] = [
  * Update this with your actual Google Business data.
  */
 export const googleRating: GoogleRating = {
-  average: 4.8,
-  count: 127,
-  url: "https://g.page/r/your-google-business-url",
+  average: 4.9,
+  count: 214,
+  url: "https://g.page/r/summit-cycle-co",
 }
 
 // ============================================================================

@@ -1,15 +1,14 @@
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Container } from "@/components/layout/Container"
 import { SectionWrapper } from "@/components/layout/SectionWrapper"
+import { Wrench, Users, Bike, CheckCircle } from "lucide-react"
 
-interface FeatureBlock {
+interface StatHighlight {
   id: string
-  title: string
+  value: string
+  label: string
   description: string
-  image: string
-  imageAlt: string
-  imagePosition: "left" | "right"
+  Icon: React.ComponentType<{ className?: string }>
 }
 
 export interface FeaturesSectionProps {
@@ -17,94 +16,90 @@ export interface FeaturesSectionProps {
 }
 
 /**
- * About page features section with alternating image/text layout.
- * Edit the blocks array below to customize for your business.
+ * About page stats/highlights section.
+ * Edit the highlights array below to customize for your business.
  */
 export function AboutFeatures({ className }: FeaturesSectionProps) {
-  const blocks: FeatureBlock[] = [
+  const highlights: StatHighlight[] = [
     {
-      id: "value-1",
-      title: "Our Mission",
-      description:
-        "We are driven by a simple yet powerful mission: to help our clients achieve their goals and improve their lives. Every decision we make is guided by this commitment to your success and well-being.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop",
-      imageAlt: "Team collaboration meeting",
-      imagePosition: "right",
+      id: "experience",
+      value: "10+",
+      label: "Years Experience",
+      description: "Serving Boulder's riders since 2012 with expertise you can count on.",
+      Icon: Wrench,
     },
     {
-      id: "value-2",
-      title: "Our Values",
-      description:
-        "Integrity, excellence, and compassion form the foundation of everything we do. We believe in treating every client with respect and providing honest, transparent service that you can trust.",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=800&fit=crop",
-      imageAlt: "Professional team discussion",
-      imagePosition: "left",
+      id: "mechanics",
+      value: "6",
+      label: "Certified Mechanics",
+      description: "Every mechanic on our team is certified and rides the same terrain you do.",
+      Icon: Users,
     },
     {
-      id: "value-3",
-      title: "Our Commitment",
-      description:
-        "We are committed to continuous improvement and staying at the forefront of our industry. Our team regularly participates in training and education to ensure we provide you with the best possible service.",
-      image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&h=800&fit=crop",
-      imageAlt: "Professional development",
-      imagePosition: "right",
+      id: "bikes",
+      value: "5,000+",
+      label: "Bikes Serviced",
+      description: "From trail hardtails to carbon road bikes, we've seen and fixed it all.",
+      Icon: Bike,
+    },
+    {
+      id: "brands",
+      value: "All",
+      label: "Major Brands",
+      description: "We work on every brand — Trek, Specialized, Giant, Cannondale, and more.",
+      Icon: CheckCircle,
     },
   ]
 
   return (
-    <SectionWrapper className={cn("bg-background", className)}>
+    <SectionWrapper className={cn("bg-secondary/60", className)}>
       <Container>
-        {blocks.map((block, index) => (
-          <div key={block.id} className={cn(index > 0 && "mt-20 md:mt-32")}>
-            <div
-              className={cn(
-                "flex flex-col items-center gap-10 md:gap-20 xl:gap-[140px]",
-                block.imagePosition === "right"
-                  ? "md:flex-row-reverse"
-                  : "md:flex-row"
-              )}
-            >
-              {/* Desktop Image */}
-              <div className="relative hidden aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:flex md:max-h-[300px] md:max-w-[300px] xl:max-h-[520px] xl:max-w-[520px]">
-                <Image
-                  src={block.image}
-                  alt={block.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 300px, 520px"
-                />
-              </div>
+        {/* Section Header */}
+        <div className="mb-12 flex flex-col items-center gap-3 text-center">
+          <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+            By the Numbers
+          </span>
+          <h2 className="font-heading text-balance text-3xl font-bold text-foreground md:text-4xl">
+            Why Boulder Riders Choose Us
+          </h2>
+          <p className="max-w-xl text-base text-muted-foreground text-pretty">
+            A decade of honest work, skilled hands, and genuine passion for
+            cycling has earned us the trust of thousands of Front Range riders.
+          </p>
+        </div>
 
-              {/* Content */}
-              <div className="flex w-full flex-col gap-8">
-                {/* Heading */}
-                <div className="flex w-full justify-center md:justify-start">
-                  <h2 className="font-heading text-balance text-center text-3xl font-bold text-foreground md:text-left md:text-4xl lg:text-5xl">
-                    {block.title}
-                  </h2>
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {highlights.map((item) => {
+            const Icon = item.Icon
+            return (
+              <div
+                key={item.id}
+                className="flex flex-col gap-4 rounded-xl border border-border bg-background p-6 shadow-sm"
+              >
+                {/* Icon */}
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10">
+                  <Icon className="h-5 w-5 text-primary" />
                 </div>
 
-                {/* Mobile Image */}
-                <div className="relative aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:hidden">
-                  <Image
-                    src={block.image}
-                    alt={block.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
-                  />
+                {/* Stat Value */}
+                <div className="flex flex-col gap-1">
+                  <span className="font-heading text-4xl font-bold tabular-nums text-foreground">
+                    {item.value}
+                  </span>
+                  <span className="text-sm font-semibold uppercase tracking-widest text-accent">
+                    {item.label}
+                  </span>
                 </div>
 
                 {/* Description */}
-                <div className="flex w-full flex-col gap-8">
-                  <p className="text-base font-medium leading-relaxed text-muted-foreground">
-                    {block.description}
-                  </p>
-                </div>
+                <p className="text-sm leading-relaxed text-muted-foreground text-pretty">
+                  {item.description}
+                </p>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+          })}
+        </div>
       </Container>
     </SectionWrapper>
   )

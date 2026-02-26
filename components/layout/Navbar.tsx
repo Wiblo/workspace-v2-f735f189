@@ -108,7 +108,7 @@ export function Navbar() {
                   >
                     <span className="pointer-events-none absolute inset-0 rounded-lg bg-black/10 opacity-0 transition-opacity group-hover:opacity-100 hover:rounded-xl"></span>
                     <span className="flex flex-1 items-center justify-center gap-x-2">
-                      Book Appointment
+                      Get a Quote
                       <span className="relative inline-block h-4 w-4">
                         <ChevronRight className="absolute left-0 top-0 h-4 w-4 transition-[transform,opacity] duration-200 group-hover:translate-x-1 group-hover:opacity-0" aria-hidden="true" />
                         <ArrowRight className="absolute left-0 top-0 h-4 w-4 -translate-x-1 opacity-0 transition-[transform,opacity] duration-200 group-hover:translate-x-0 group-hover:opacity-100" aria-hidden="true" />
@@ -151,7 +151,7 @@ export function Navbar() {
                   className="flex min-h-10 w-full items-center justify-center rounded-lg bg-primary px-3 py-2 font-medium text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Book Appointment
+                  Get a Quote
                 </a>
               </li>
             )}

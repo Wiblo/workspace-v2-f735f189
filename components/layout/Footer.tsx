@@ -134,7 +134,7 @@ export function Footer() {
             {/* Office Hours & CTA */}
             <div>
               <h4 className="mb-4 font-semibold text-foreground">
-                Office Hours
+                Shop Hours
               </h4>
               <div className="mb-6 space-y-1 text-sm text-muted-foreground">
                 {Object.entries(businessInfo.hours).map(([day, hours]) => (
@@ -153,7 +153,7 @@ export function Footer() {
                   className="group inline-flex w-full items-center justify-center rounded-lg bg-primary px-4 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   <span className="flex items-center gap-2">
-                    Book Appointment
+                    Get a Quote
                     <span className="relative inline-block h-4 w-4">
                       <ChevronRight className="absolute left-0 top-0 h-4 w-4 transition-[transform,opacity] duration-200 group-hover:translate-x-1 group-hover:opacity-0" aria-hidden="true" />
                       <ArrowRight className="absolute left-0 top-0 h-4 w-4 -translate-x-1 opacity-0 transition-[transform,opacity] duration-200 group-hover:translate-x-0 group-hover:opacity-100" aria-hidden="true" />

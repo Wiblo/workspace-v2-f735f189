@@ -72,7 +72,7 @@ export function generateLocalBusinessSchema() {
 
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "BicycleStore"],
     name: businessInfo.name,
     description: businessInfo.description,
     telephone: businessInfo.phone,

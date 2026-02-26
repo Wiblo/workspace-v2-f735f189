@@ -12,15 +12,15 @@ import { businessInfo } from "@/lib/data/business-info"
 const size: "large" | "medium" | "small" = "large"
 
 /** Overlay opacity: 0-100 (percentage) */
-const overlayOpacity = 20
+const overlayOpacity = 35
 
 /** Hero content - edit these values directly */
 const heroContent = {
   subtitle: `Welcome to ${businessInfo.name}`,
-  title: "Experience Relief Through Expert Chiropractic Care",
-  backgroundImage: "/images/hero-background.jpg",
-  backgroundImageAlt: "Professional chiropractic treatment room with modern equipment",
-  ctaText: "Book Your Appointment",
+  title: "Your Bike Deserves Expert Care",
+  backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=900&fit=crop",
+  backgroundImageAlt: "Mountain biker on a rocky trail",
+  ctaText: "Get a Quote",
   ctaUrl: businessInfo.bookingUrl || "/contact",
 }
 
