@@ -23,8 +23,8 @@ export function AboutPreview({ className }: AboutPreviewProps) {
           <div className="w-full md:w-1/2 lg:w-5/12">
             <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=800&fit=crop"
-                alt="Bicycle mechanic working on a bike in a shop"
+                src="/images/about-mechanic.jpg"
+                alt="Mike Murphy Bikes mechanic working on a bicycle in the workshop"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 400px, 500px"
