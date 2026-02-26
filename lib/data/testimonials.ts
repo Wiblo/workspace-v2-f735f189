@@ -65,7 +65,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "3",
     name: "Tom W.",
-    text: "Summit Cycle Co. built my custom gravel bike from scratch. They helped me choose every component, kept me updated throughout the build, and the result is exactly what I wanted. Worth every penny.",
+    text: "Mike Murphy Bikes built my custom gravel bike from scratch. They helped me choose every component, kept me updated throughout the build, and the result is exactly what I wanted. Worth every penny.",
     rating: 5,
     role: "Gravel Rider",
     source: "google",
@@ -100,7 +100,7 @@ export const testimonials: Testimonial[] = [
 export const googleRating: GoogleRating = {
   average: 4.9,
   count: 214,
-  url: "https://g.page/r/summit-cycle-co",
+  url: "https://g.page/r/mike-murphy-bikes",
 }
 
 // ============================================================================

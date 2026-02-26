@@ -44,7 +44,7 @@ export function AboutPreview({ className }: AboutPreviewProps) {
 
               {/* Description */}
               <p className="mb-8 text-lg leading-relaxed text-pretty text-muted-foreground">
-                Summit Cycle Co. was founded by riders, for riders. Based in Boulder, CO — one of the best
+                Mike Murphy Bikes was founded by riders, for riders. Based in Boulder, CO — one of the best
                 cycling cities in the country — we&apos;ve built our reputation on honest advice, fast turnaround,
                 and expert mechanical work. Whether you ride technical singletrack in the Flatirons or log miles
                 on the road, our certified mechanics treat your bike like their own.

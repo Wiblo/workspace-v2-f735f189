@@ -6,7 +6,7 @@ import { JsonLd, generateLocalBusinessSchema } from "@/lib/seo/json-ld"
 import { generateRootMetadata } from "@/lib/seo/metadata"
 import { WibloDesignBridge } from "@/components/wiblo-design-bridge"
 
-// Summit Cycle Co. — Barlow Condensed for bold, sporty headings
+// Mike Murphy Bikes — Barlow Condensed for bold, sporty headings
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   variable: "--font-heading",

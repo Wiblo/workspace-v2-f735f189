@@ -14,7 +14,7 @@ const overlayOpacity = 45
 /** Hero content - edit these values directly */
 const heroContent = {
   subtitle: "Our Story",
-  title: "About Summit Cycle Co.",
+  title: "About Mike Murphy Bikes",
   description: "Boulder's most trusted bicycle repair shop since 2012",
   backgroundImage:
     "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1600&h=600&fit=crop",

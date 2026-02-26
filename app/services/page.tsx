@@ -6,7 +6,7 @@ import { PricingTransparencySection } from "@/components/sections/services/Prici
 import { CTASection } from "@/components/sections/cta/CTASection"
 
 export const metadata: Metadata = {
-  title: "Our Services | Summit Cycle Co.",
+  title: "Our Services | Mike Murphy Bikes",
   description: `Expert bicycle repair services in Boulder, CO. Mountain bike repair, road bike tuning, tune-ups, and custom builds at ${businessInfo.name}. Free estimates on all work.`,
 }
 

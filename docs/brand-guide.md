@@ -1,8 +1,8 @@
-# Brand Guide — Summit Cycle Co.
+# Brand Guide — Mike Murphy Bikes
 
 ## Overview
 
-Summit Cycle Co. is a Boulder, CO bicycle repair shop specializing in mountain and road bikes. The brand is outdoorsy, rugged, and adventurous — but also precise and professional. Deep forest green grounds the identity in nature and durability; warm amber energizes and signals performance.
+Mike Murphy Bikes is a Boulder, CO bicycle repair shop specializing in mountain and road bikes. The brand is outdoorsy, rugged, and adventurous — but also precise and professional. Deep forest green grounds the identity in nature and durability; warm amber energizes and signals performance.
 
 ---
 

@@ -6,15 +6,15 @@
  */
 export const businessInfo = {
   // Core Business Details
-  name: "Summit Cycle Co.",
+  name: "Mike Murphy Bikes",
   tagline: "Expert Bicycle Repair & Service",
   description:
-    "Summit Cycle Co. is your local bicycle repair specialist in Boulder. We service mountain bikes, road bikes, and everything in between with expert care and precision.",
+    "Mike Murphy Bikes is your local bicycle repair specialist in Boulder. We service mountain bikes, road bikes, and everything in between with expert care and precision.",
 
   // Contact Information
   phone: "(720) 842-7623",
   phoneSecondary: "", // Optional secondary phone number
-  email: "hello@summitcycleco.com",
+  email: "hello@mikemurphybikes.com",
 
   // Physical Location
   address: {
@@ -37,7 +37,7 @@ export const businessInfo = {
     /** Google Maps Place ID (find at: https://developers.google.com/maps/documentation/places/web-service/place-id) */
     placeId: "",
     /** Display name for the location on maps */
-    locationName: "Summit Cycle Co.",
+    locationName: "Mike Murphy Bikes",
     /** Google Maps API key (optional, for embed without place ID) */
     apiKey: "",
   },
@@ -58,15 +58,15 @@ export const businessInfo = {
 
   // Social Media (leave empty string if not used)
   social: {
-    facebook: "https://facebook.com/summitcycleco",
-    instagram: "https://instagram.com/summitcycleco",
+    facebook: "https://facebook.com/mikemurphybikes",
+    instagram: "https://instagram.com/mikemurphybikes",
     twitter: "",
     linkedin: "",
     youtube: "",
   },
 
   // Website
-  url: "https://summitcycleco.com",
+  url: "https://mikemurphybikes.com",
   logo: "/logo.png",
 
   // Booking (leave empty string if no booking system)

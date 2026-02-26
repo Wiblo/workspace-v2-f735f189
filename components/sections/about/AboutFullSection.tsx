@@ -20,7 +20,7 @@ export function AboutFullSection({ className }: AboutFullSectionProps) {
           <div className="relative hidden aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:flex md:max-h-[300px] md:max-w-[300px] xl:max-h-[520px] xl:max-w-[520px]">
             <Image
               src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop"
-              alt="Summit Cycle Co. mechanic working on a bicycle"
+              alt="Mike Murphy Bikes mechanic working on a bicycle"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 300px, 520px"
@@ -41,7 +41,7 @@ export function AboutFullSection({ className }: AboutFullSectionProps) {
             <div className="relative aspect-square w-full shrink-0 overflow-hidden rounded-4xl md:hidden">
               <Image
                 src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop"
-                alt="Summit Cycle Co. mechanic working on a bicycle"
+                alt="Mike Murphy Bikes mechanic working on a bicycle"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -51,7 +51,7 @@ export function AboutFullSection({ className }: AboutFullSectionProps) {
             {/* Paragraphs */}
             <div className="flex w-full flex-col gap-4">
               <p className="text-lg leading-relaxed text-muted-foreground text-pretty">
-                We started Summit Cycle Co. in 2012 with a simple mission: give
+                We started Mike Murphy Bikes in 2012 with a simple mission: give
                 Boulder&apos;s riders a shop they could trust. No upsells, no
                 guesswork — just honest work from mechanics who actually ride the
                 trails and roads we repair bikes for.

@@ -8,9 +8,9 @@ import { ContactForm } from "@/components/sections/contact/ContactForm"
 import { businessInfo } from "@/lib/data/business-info"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Summit Cycle Co.",
+  title: "Contact Us | Mike Murphy Bikes",
   description:
-    "Drop off your bike or reach out with questions. Summit Cycle Co. is Boulder's trusted bicycle repair shop — find our address, hours, and send us a message.",
+    "Drop off your bike or reach out with questions. Mike Murphy Bikes is Boulder's trusted bicycle repair shop — find our address, hours, and send us a message.",
 }
 
 const hours = [

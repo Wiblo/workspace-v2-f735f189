@@ -8,7 +8,7 @@ import { LocationSection } from "@/components/sections/location/LocationSection"
 import { FAQSection } from "@/components/sections/faq/FAQSection"
 
 export const metadata: Metadata = {
-  title: "Summit Cycle Co. | Expert Bicycle Repair in Boulder, CO",
+  title: "Mike Murphy Bikes | Expert Bicycle Repair in Boulder, CO",
   description:
     "Boulder's trusted mountain and road bike repair shop. Certified mechanics, fast turnaround, honest pricing. Serving the Boulder cycling community since day one.",
 }

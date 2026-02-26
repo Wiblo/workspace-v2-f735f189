@@ -4,7 +4,7 @@ import { businessInfo } from '@/lib/data/business-info'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: businessInfo.name,
-    short_name: 'Summit Cycle',
+    short_name: 'MM Bikes',
     description: businessInfo.description,
     start_url: '/',
     display: 'standalone',

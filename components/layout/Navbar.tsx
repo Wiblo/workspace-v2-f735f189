@@ -53,7 +53,7 @@ export function Navbar() {
                   priority
                 />
                 <div className="pb-0.5">
-                  <p className="text-base sm:text-2xl font-signature font-semibold text-foreground leading-tight whitespace-nowrap">
+                  <p className="text-base sm:text-2xl font-heading font-bold text-foreground leading-tight whitespace-nowrap">
                     {businessInfo.name}
                   </p>
                   <p className="text-[8px] sm:text-[10px] font-heading font-semibold tracking-[0.15em] sm:tracking-[0.25em] text-muted-foreground uppercase whitespace-nowrap">

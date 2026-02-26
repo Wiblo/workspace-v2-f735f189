@@ -105,8 +105,8 @@ export const services: Service[] = [
     description:
       "Regular maintenance is the best investment you can make for your bike. Our tune-up packages are designed to keep your ride performing smoothly and extend the life of your components.\n\nOur Basic Tune-Up covers gear and brake adjustments, a safety inspection, and lubrication of all moving parts. Our Full Tune-Up adds a complete drivetrain cleaning, cable replacement if needed, and wheel truing.\n\nWe recommend a tune-up at least once a year for casual riders and every 3–6 months for regular riders. Catching small issues early saves you money in the long run.",
     icon: "Wrench",
-    image: "https://images.unsplash.com/photo-1531591346702-a16f70e3e47a?w=800&h=600&fit=crop",
-    imageAlt: "Bicycle mechanic performing a tune-up in the workshop",
+    image: "/images/bike-shop-row.jpg",
+    imageAlt: "Row of mountain and road bikes displayed in a bicycle repair shop",
     featured: true,
     duration: "Same day",
     price: "From $65",

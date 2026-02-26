@@ -11,7 +11,7 @@ const points = [
 
 /**
  * Pricing transparency callout section for the Services page.
- * Communicates Summit Cycle Co.'s commitment to honest, upfront pricing.
+ * Communicates Mike Murphy Bikes's commitment to honest, upfront pricing.
  */
 export function PricingTransparencySection() {
   return (
