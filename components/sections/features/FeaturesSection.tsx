@@ -45,8 +45,8 @@ export function FeaturesSection({ className }: FeaturesSectionProps) {
       title: "All Brands, All Bikes",
       description:
         "From entry-level commuters to high-end race machines, we service every type of bicycle. We stock parts from all major brands and have experience with Shimano, SRAM, Campagnolo, Fox, RockShox, and more. If we don't have a part in stock, we'll get it fast.",
-      image: "https://images.unsplash.com/photo-1526659666037-6c99e3f9dbe0?w=800&h=800&fit=crop",
-      imageAlt: "Row of different bicycles in a bike shop",
+      image: "/images/all-brands-bikes.jpg",
+      imageAlt: "Well-stocked bicycle shop showroom with mountain bikes, road bikes, and e-bikes from multiple brands",
       imagePosition: "right",
     },
   ]
